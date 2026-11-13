@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Eproc.Application.Contracts/Eproc.Application.Contracts.csproj" />
+    <Project Path="src/Eproc.Application/Eproc.Application.csproj" />
+    <Project Path="src/Eproc.Domain.Shared/Eproc.Domain.Shared.csproj" />
+    <Project Path="src/Eproc.Domain/Eproc.Domain.csproj" />
+    <Project Path="src/Eproc.HttpApi.Host/Eproc.HttpApi.Host.csproj" />
+  </Folder>
+  <Folder Name="/test/">
+    <Project Path="test/Eproc.Domain.Tests/Eproc.Domain.Tests.csproj" />
+  </Folder>
+</Solution>

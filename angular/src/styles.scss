@@ -1,0 +1,171 @@
+:root {
+  --eproc-primary-color: #0F4C81;
+  --eproc-bg: #f4f7fb;
+  --eproc-surface: #ffffff;
+  --eproc-border: #dce3ec;
+  --eproc-text: #1e293b;
+  --eproc-muted: #64748b;
+  --eproc-success: #0f766e;
+  --eproc-warning: #b45309;
+  --eproc-danger: #b91c1c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--eproc-bg);
+  color: var(--eproc-text);
+}
+
+.eproc-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.eproc-header {
+  background: var(--eproc-primary-color);
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.15);
+}
+
+.eproc-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.eproc-badge {
+  background: rgba(255, 255, 255, 0.18);
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.eproc-controls-bar {
+  background: #fff;
+  border-bottom: 1px solid var(--eproc-border);
+  padding: 0.65rem 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.eproc-workspace {
+  display: grid;
+  grid-template-columns: 310px 1fr;
+  flex: 1;
+}
+
+.eproc-sidebar {
+  background: #ffffff;
+  border-right: 1px solid var(--eproc-border);
+  padding: 1rem;
+  overflow-y: auto;
+  max-height: calc(100vh - 115px);
+}
+
+.eproc-content {
+  padding: 1.25rem;
+  overflow-y: auto;
+}
+
+.eproc-card {
+  background: #fff;
+  border: 1px solid var(--eproc-border);
+  border-radius: 10px;
+  padding: 1.15rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
+}
+
+.eproc-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.eproc-table th,
+.eproc-table td {
+  padding: 0.65rem 0.75rem;
+  border-bottom: 1px solid var(--eproc-border);
+  text-align: left;
+}
+
+.eproc-table th {
+  background: #f8fafc;
+  font-weight: 600;
+  color: #334155;
+}
+
+.eproc-btn {
+  background: var(--eproc-primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.45rem 0.85rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.eproc-btn-outline {
+  background: transparent;
+  color: var(--eproc-primary-color);
+  border: 1px solid var(--eproc-primary-color);
+  border-radius: 6px;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.eproc-pill {
+  display: inline-block;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.eproc-pill-success {
+  background: #ccfbf1;
+  color: #115e59;
+}
+
+.eproc-pill-warn {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.eproc-pill-danger {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.eproc-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.eproc-input {
+  width: 100%;
+  padding: 0.45rem 0.65rem;
+  border: 1px solid var(--eproc-border);
+  border-radius: 6px;
+  font-size: 0.85rem;
+}

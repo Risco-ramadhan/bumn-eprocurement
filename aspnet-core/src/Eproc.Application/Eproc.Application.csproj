@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Eproc</RootNamespace>
+    <AssemblyName>Eproc.Application</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Eproc.Domain\Eproc.Domain.csproj" />
+    <ProjectReference Include="..\Eproc.Application.Contracts\Eproc.Application.Contracts.csproj" />
+  </ItemGroup>
+</Project>
